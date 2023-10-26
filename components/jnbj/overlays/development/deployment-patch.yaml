@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jnbj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-uhgo-tenant/byoc-app-yqao/jnbj@sha256:6cd6bfd4f9ee58e54bf6487823006be83ff6c20d916371f8d08da49a3858fe80
+        name: my-java-quarkus
+        resources: {}
+status: {}
